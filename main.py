@@ -67,7 +67,8 @@ tests = [
     {'board': [[X_SYMBOL, O_SYMBOL, X_SYMBOL], [O_SYMBOL, X_SYMBOL, O_SYMBOL], [O_SYMBOL, X_SYMBOL, X_SYMBOL]], 'result': X_WIN},
     {'board': [[X_SYMBOL, O_SYMBOL, X_SYMBOL], [O_SYMBOL, X_SYMBOL, O_SYMBOL], [O_SYMBOL, O_SYMBOL, O_SYMBOL]], 'result': O_WIN},
     {'board': [[X_SYMBOL, O_SYMBOL, X_SYMBOL], [O_SYMBOL, X_SYMBOL, O_SYMBOL], [O_SYMBOL, X_SYMBOL, O_SYMBOL]], 'result': TIE},
-    {'board': [[X_SYMBOL, BLANK_SYMBOL, BLANK_SYMBOL], [O_SYMBOL, BLANK_SYMBOL, BLANK_SYMBOL], [BLANK_SYMBOL, X_SYMBOL, O_SYMBOL]], 'result': NO_WIN_MET}
+    {'board': [[X_SYMBOL, BLANK_SYMBOL, BLANK_SYMBOL], [O_SYMBOL, BLANK_SYMBOL, BLANK_SYMBOL], [BLANK_SYMBOL, X_SYMBOL, O_SYMBOL]], 'result': NO_WIN_MET},
+    {'board': [[BLANK_SYMBOL, BLANK_SYMBOL, BLANK_SYMBOL], [BLANK_SYMBOL, BLANK_SYMBOL, BLANK_SYMBOL], [BLANK_SYMBOL, BLANK_SYMBOL, BLANK_SYMBOL]], 'result': NO_WIN_MET}
 ]
 
 checked_tests = [{'test_#': i, 'passed': test['result'] == debug_check_board(test['board']),
